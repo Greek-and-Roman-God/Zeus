@@ -1,4 +1,4 @@
-from chap3 import calc_coin, calc_bigger_rule, calc_card, calc_until_one, calc_until_one_re
+from part2 import calc_coin, calc_bigger_rule, calc_card, calc_until_one, calc_until_one_re
 
 #3-1 동전문제
 #calc_coin(1260)

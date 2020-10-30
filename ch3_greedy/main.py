@@ -1,5 +1,7 @@
 from part2 import calc_coin, calc_bigger_rule, calc_card, calc_until_one, calc_until_one_re
+from part3 import grouping_guild
 
+#Part2
 #3-1 동전문제
 #calc_coin(1260)
 
@@ -12,4 +14,8 @@ from part2 import calc_coin, calc_bigger_rule, calc_card, calc_until_one, calc_u
 
 #3-4 실전문제 - 1이될때까지
 # calc_until_one()
-calc_until_one_re()
+# calc_until_one_re()
+
+#Part3
+#Q1 모험가 길드
+grouping_guild()

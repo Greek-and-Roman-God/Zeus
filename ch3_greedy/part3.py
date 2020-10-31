@@ -19,3 +19,24 @@ def grouping_guild():
     cnt += 1
 
   print('cnt=====',cnt)
+
+  
+#Q2 곱하기 혹은 더하기
+def mul_or_plus():
+  result = 0
+  num_arr = list(map(int,input()))
+  size = len(num_arr)
+
+  result += num_arr[0]
+
+  for i in range(size-1):
+    tmp = num_arr[i+1]
+    if result == 1 or result == 0:
+      result += tmp
+      continue
+    if tmp == 0:
+      result += tmp
+    else:
+      result *= tmp
+  print(result)
+

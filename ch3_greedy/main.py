@@ -1,5 +1,5 @@
 from part2 import calc_coin, calc_bigger_rule, calc_card, calc_until_one, calc_until_one_re
-from part3 import grouping_guild
+from part3 import grouping_guild, mul_or_plus
 
 #Part2
 #3-1 동전문제
@@ -18,4 +18,7 @@ from part3 import grouping_guild
 
 #Part3
 #Q1 모험가 길드
-grouping_guild()
+# grouping_guild()
+
+#Q2 곱하기 혹은 더하기
+mul_or_plus()

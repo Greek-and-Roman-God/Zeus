@@ -1,5 +1,5 @@
 from part2 import calc_coin, calc_bigger_rule, calc_card, calc_until_one, calc_until_one_re
-from part3 import grouping_guild, mul_or_plus
+from part3 import grouping_guild, mul_or_plus, flip_string, cannot_make_price, choose_ball
 
 #Part2
 #3-1 동전문제
@@ -21,4 +21,13 @@ from part3 import grouping_guild, mul_or_plus
 # grouping_guild()
 
 #Q2 곱하기 혹은 더하기
-mul_or_plus()
+# mul_or_plus()
+
+#Q3 문자열 뒤집기
+# flip_string()
+
+#Q4 만들 수 없는 금액
+cannot_make_price()
+
+#Q5 볼링공 고르기
+# choose_ball()

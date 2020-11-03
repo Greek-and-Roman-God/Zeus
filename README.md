@@ -1,4 +1,4 @@
-ㅌ# Zeus
+# Zeus
 
 ⚡Ζεύς⚡ 연습문제, 백준 문제풀이  <br/>
 our goal : ❗❗KILL THE PYTHON❗❗  <br/>

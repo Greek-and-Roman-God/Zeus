@@ -34,3 +34,4 @@ from part3 import grouping_guild, mul_or_plus, flip_string, cannot_make_price, c
 
 #Q6 무지의 먹방 라이브
 # muji_mukbang()
+print('main')

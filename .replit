@@ -1,2 +1,3 @@
 language = "python3"
-run = "python ch3_greedy/main.py"
+#run = "python ch3_greedy/main.py"
+run = "python baekjoon/main.py"

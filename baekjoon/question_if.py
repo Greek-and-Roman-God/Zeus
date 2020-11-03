@@ -11,7 +11,6 @@ def compare_two_nums():
     result = '=='
   
   print(result)
-  
 
 
 # 9498번 시험성적

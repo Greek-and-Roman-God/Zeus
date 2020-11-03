@@ -40,6 +40,7 @@ def mul_or_plus():
       result *= tmp
   print(result)
 
+
 #Q3 문자열 뒤집기
 def flip_string():
   result = 0
@@ -101,3 +102,39 @@ def choose_ball():
       else:
         cnt += 1
   print(cnt)
+
+
+
+#Q6 무지의 먹방 라이브 (실행은 프로그래머스에서만 가능)
+#프로그래머스 : https://programmers.co.kr/learn/courses/30/lessons/42891
+import heapq
+
+def solution(food_times, k):
+    answer = 0
+    arr_sum = sum(food_times)
+
+    if arr_sum <= k:
+        return -1 #리턴하고 끝나버림
+    
+    que = []
+    length = len(food_times) #음식의 갯수
+
+    for i in range(length):
+        #que에 food_times[i]와 몇번째음식인지 넣음
+        heapq.heappush( que, (food_times[i], i+1) ) 
+    
+    prev = 0
+    time_sum = 0
+    r = 0 
+    
+    while time_sum + (que[0][0] - prev) * length <= k:
+        now = heapq.heappop(que)[0]
+        time_sum += (now - prev) * length
+        length -= 1
+        prev = now
+        
+    result = sorted(que, key =lambda x:x[1])
+    r = (k - time_sum) % len(result)
+    answer = result[r][1]
+
+    return answer

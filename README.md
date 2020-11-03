@@ -3,9 +3,9 @@
 ⚡Ζεύς⚡ 연습문제, 백준 문제풀이  <br/>
 our goal : ❗❗KILL THE PYTHON❗❗  <br/>
 
-### chap3 greedy[🔥](https://github.com/Greek-and-Roman-God/Zeus/tree/main/ch3_greedy)
+## chap3 greedy[🔥](https://github.com/Greek-and-Roman-God/Zeus/tree/main/ch3_greedy)
 
-| Part2                         | Part3                | 
+| [Part2](https://github.com/Greek-and-Roman-God/Zeus/blob/main/ch3_greedy/part2.py)                         | [Part3](https://github.com/Greek-and-Roman-God/Zeus/blob/main/ch3_greedy/part3.py)                | 
 |-------------------------------|----------------------|
 |✔ 3-1예제 거스름돈           |✔ Q1 모험가 길드    
 |✔ 3-2실전문제 큰수의법칙      |✔ Q2 곱하기 혹은 더하기  
@@ -13,3 +13,10 @@ our goal : ❗❗KILL THE PYTHON❗❗  <br/>
 |✔ 3-4실전문제 1이 될 때까지   |✔ Q4 만들 수 없는 금액 
 |                               |✔ Q5 볼링공 고르기 
 |                               |✔ Q6 무지의 먹방 라이브 
+
+
+
+## Baekjoon Online Judge
+- [X] if문 [❓](https://www.acmicpc.net/step/4) [💯](https://github.com/Greek-and-Roman-God/Zeus/blob/main/baekjoon/question_if.py)
+- [ ] for문 [❓](https://www.acmicpc.net/step/3) [💯]()
+- [ ] while문 [❓](https://www.acmicpc.net/step/2) [💯]()

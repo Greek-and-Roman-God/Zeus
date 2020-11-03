@@ -31,6 +31,7 @@ def calc_bigger_rule():
       sum += num_arr[0]
   print(sum)
 
+
 #3-3 실전문제 - 숫자카드게임
 def calc_card():
   n, m = map(int, input().split())
@@ -42,6 +43,7 @@ def calc_card():
     row_min_arr.append(min_num) #n번의 반복을 돌고나면 각 행의 min이 arr에 들어있음
   result = max(row_min_arr)
   print(result)
+
 
 #3-4 실전문제 - 1이될때까지
 def calc_until_one():
@@ -62,6 +64,7 @@ def calc_until_one():
     cnt += 1
   
   print(cnt)
+
 
 #3-4 실전문제 - 1이될때까지 재풀이
 def calc_until_one_re():

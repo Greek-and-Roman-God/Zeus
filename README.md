@@ -7,19 +7,31 @@ our goal : ❗❗KILL THE PYTHON❗❗  <br/>
 
 | [Part2](https://github.com/Greek-and-Roman-God/Zeus/blob/main/ch3_greedy/part2.py)                         | [Part3](https://github.com/Greek-and-Roman-God/Zeus/blob/main/ch3_greedy/part3.py)                | 
 |-------------------------------|----------------------|
-|✔ 3-1예제 거스름돈           |✔ Q1 모험가 길드    
-|✔ 3-2실전문제 큰수의법칙      |✔ Q2 곱하기 혹은 더하기  
-|✔ 3-3실전문제 숫자 카드 게임  |✔ Q3 문자열 뒤집기 
-|✔ 3-4실전문제 1이 될 때까지   |✔ Q4 만들 수 없는 금액 
+|✔ 3-1 예제 거스름돈           |✔ Q1 모험가 길드    
+|✔ 3-2 실전문제 큰수의법칙      |✔ Q2 곱하기 혹은 더하기  
+|✔ 3-3 실전문제 숫자 카드 게임  |✔ Q3 문자열 뒤집기 
+|✔ 3-4 실전문제 1이 될 때까지   |✔ Q4 만들 수 없는 금액 
 |                               |✔ Q5 볼링공 고르기 
 |                               |✔ Q6 무지의 먹방 라이브 
 
+## chap4 구현[🔥]()
+
+| [Part2]()                         | [Part3]()                | 
+|-------------------------------|----------------------|
+| 4-1 예제 상하좌우           | Q7 럭키 스트레이트    
+| 4-2 예제 시각               | Q8 문자열 재정렬  
+| 4-3 실전문제 왕실의 나이트    | Q9 문자열 압축 
+| 4-4 게임 개발               | Q10 자물쇠와 열쇠 
+|                               | Q11 뱀 
+|                               | Q12 기둥과 보 설치 
+|                               | Q13 치킨 배달 
+|                               | Q14 외벽 점검 
 
 
 ## Baekjoon Online Judge
 - [X] if문 [❓](https://www.acmicpc.net/step/4) [💯](https://github.com/Greek-and-Roman-God/Zeus/blob/main/baekjoon/question_if.py)
 - [ ] for문 [❓](https://www.acmicpc.net/step/3) [💯]()
-- [ ] while문 [❓](https://www.acmicpc.net/step/2) [💯]()
+- [X] while문 [❓](https://www.acmicpc.net/step/2) [💯](https://github.com/Greek-and-Roman-God/Zeus/blob/main/baekjoon/question_while.py)
 - [ ] 1차원 배열 [❓]() [💯]()
 - [ ] 함수 [❓]() [💯]()
 - [ ] 문자열 [❓]() [💯]()

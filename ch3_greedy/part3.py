@@ -22,6 +22,7 @@ def grouping_guild():
 
   
 #Q2 곱하기 혹은 더하기
+# 0일때, 그리고 1일때에도 + 해줘야하는걸 빼먹음!
 def mul_or_plus():
   result = 0
   num_arr = list(map(int,input()))
@@ -34,7 +35,7 @@ def mul_or_plus():
     if result == 1 or result == 0:
       result += tmp
       continue
-    if tmp == 0:
+    if tmp == 0 or tmp == 1:
       result += tmp
     else:
       result *= tmp
@@ -61,6 +62,7 @@ def flip_string():
     cnt_zero += 1
   else:
     cnt_one += 1
+  
   
   result = min(cnt_zero, cnt_one)
   print(result)

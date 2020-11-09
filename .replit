@@ -1,5 +1,5 @@
 language = "python3"
 #run = "python ch3_greedy/main.py"
-#run = "python ch4_realization/main.py"
+run = "python ch4_realization/main.py"
 #run = "python baekjoon/main.py"
-run = "python jump_to_python/main.py"
+#run = "python jump_to_python/main.py"

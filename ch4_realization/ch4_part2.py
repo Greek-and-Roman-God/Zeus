@@ -93,3 +93,7 @@ def knight_in_castle():
   print(cnt)
   
 
+
+
+
+

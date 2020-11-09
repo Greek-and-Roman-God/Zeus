@@ -21,7 +21,7 @@ our goal : ❗❗KILL THE PYTHON❗❗  <br/>
 |✔ 4-1 예제 상하좌우           | Q7 럭키 스트레이트    
 |✔ 4-2 예제 시각               | Q8 문자열 재정렬  
 |✔ 4-3 실전문제 왕실의 나이트    | Q9 문자열 압축 
-| 4-4 게임 개발               | Q10 자물쇠와 열쇠 
+|✔ 4-4 게임 개발               | Q10 자물쇠와 열쇠 
 |                               | Q11 뱀 
 |                               | Q12 기둥과 보 설치 
 |                               | Q13 치킨 배달 
@@ -30,7 +30,7 @@ our goal : ❗❗KILL THE PYTHON❗❗  <br/>
 
 ## Baekjoon Online Judge
 - [X] if문 [❓](https://www.acmicpc.net/step/4) [💯](https://github.com/Greek-and-Roman-God/Zeus/blob/main/baekjoon/question_if.py)
-- [ ] for문 [❓](https://www.acmicpc.net/step/3) [💯]()
+- [X] for문 [❓](https://www.acmicpc.net/step/3) [💯](https://github.com/Greek-and-Roman-God/Zeus/blob/main/baekjoon/question_for.py)
 - [X] while문 [❓](https://www.acmicpc.net/step/2) [💯](https://github.com/Greek-and-Roman-God/Zeus/blob/main/baekjoon/question_while.py)
 - [ ] 1차원 배열 [❓]() [💯]()
 - [ ] 함수 [❓]() [💯]()

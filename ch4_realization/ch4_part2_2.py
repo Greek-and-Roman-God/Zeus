@@ -1,19 +1,21 @@
-global cur_direc = 0 #전역변수로 사용하고싶으면 global 을 붙여줘야한다..!
-global turn_cnt = 0
+global cur_direc #전역변수로 사용하고싶으면 global 을 붙여줘야한다..!
+global turn_cnt
 
 def game_make():
   global cur_direc #함수 안에도 붙여줘야한다. 안붙이면 지역변수로 처리됨!
   global turn_cnt
 
   map_a, map_b = map(int, input().split()) #맵의 세로길이, 가로길이
-  now_x, now_y, cur_direc = map(int, input().split()) #캐릭터의 현재 x, y, 보는방향
+  x, y, cur_direc = map(int, input().split()) #캐릭터의 현재 x, y, 보는방향
   maps = []
+
+  cur_direc = 0
+  turn_cnt = 0
 
   for i in range(map_a):
     maps.append(list(map(int, input().split()))) #현재 맵을 받음
 
   print(maps)
-
 
   #테스트용
   # map_a, map_b = 4, 4 #맵의 세로길이, 가로길이

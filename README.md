@@ -32,7 +32,7 @@ our goal : ❗❗KILL THE PYTHON❗❗  <br/>
 - [X] if문 [❓](https://www.acmicpc.net/step/4) [💯](https://github.com/Greek-and-Roman-God/Zeus/blob/main/baekjoon/question_if.py)
 - [X] for문 [❓](https://www.acmicpc.net/step/3) [💯](https://github.com/Greek-and-Roman-God/Zeus/blob/main/baekjoon/question_for.py)
 - [X] while문 [❓](https://www.acmicpc.net/step/2) [💯](https://github.com/Greek-and-Roman-God/Zeus/blob/main/baekjoon/question_while.py)
-- [ ] 1차원 배열 [❓]() [💯]()
+- [X]] 1차원 배열 [❓](https://www.acmicpc.net/step/6) [💯](https://github.com/Greek-and-Roman-God/Zeus/blob/main/baekjoon/question_array.py)
 - [ ] 함수 [❓]() [💯]()
 - [ ] 문자열 [❓]() [💯]()
 - [ ] 수학1 [❓]() [💯]()

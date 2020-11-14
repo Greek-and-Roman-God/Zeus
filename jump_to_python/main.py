@@ -2,7 +2,15 @@ from chap2_data_type import calc_avg, check_even, jumin_slicing, jumin_gender, r
 
 from chap3_control_statement import while_3multiple, while_stars, for_print_nums, for_avgs, for_list_comprehension
 
+from chap4_input_output import is_odd, avg_all, sum_of_two, make_file, make_file2, change_file
 
+#chap4
+# is_odd()
+# avg_all(1,2,3,4,5,6,7,8)
+# sum_of_two()
+# make_file()
+# make_file2()
+change_file()
 
 
 #chap3

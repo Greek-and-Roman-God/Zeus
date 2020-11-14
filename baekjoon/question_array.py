@@ -127,6 +127,7 @@ def array_4344():
       if case[i] > score_avg:
         over += 1
     rate = round(over / case_cnt * 100, 3)
+    print(rate)
     result_arr.append(rate)
   for r in result_arr:
     print("%0.3f%%" % r)

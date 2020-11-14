@@ -12,7 +12,7 @@ from question_array import array_10818, array_2562, array_2577, array_3052, arra
 # array_3052()
 # array_1546()
 # array_8958()
-array_4344()
+# array_4344()
 
 #if문
 # compare_two_nums()

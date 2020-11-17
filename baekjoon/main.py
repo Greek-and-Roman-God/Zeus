@@ -5,6 +5,21 @@ from question_for import for_2739, for_10950, for_8393, for_15552, for_2741, for
 
 from question_array import array_10818, array_2562, array_2577, array_3052, array_1546, array_8958, array_4344
 
+from question_binarySearch import binary_search_1920
+
+from question_def import solve, def_4673
+
+
+
+
+#이분탐색
+# binary_search_1920()
+
+
+#함수
+# solve([1,2,3,4,5])
+def_4673()
+
 #1차원 배열
 # array_10818()
 # array_2562()

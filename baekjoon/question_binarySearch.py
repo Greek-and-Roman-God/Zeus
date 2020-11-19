@@ -42,3 +42,12 @@ def binary_search_1920():
         break
       
   
+  # 1654번 : 랜선자르기
+def binary_search_1654():
+  k, n = map(int, input().split())
+  lan_wires = []
+  for _ in range(k):
+    lan_wires.append(int(input()))
+  # print(lan_wires)
+
+  

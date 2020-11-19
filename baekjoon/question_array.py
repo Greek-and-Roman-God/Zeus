@@ -77,6 +77,34 @@ def array_1546():
   
 
 #8958번 : OX퀴즈
+# def array_8958():
+  # n = int(input())
+  # nums_arr = []
+  # result_arr = []
+
+  # #배열에 넣는 작업
+  # for i in range(n):
+  #   s = list(input())
+  #   nums_arr.append(s)
+  # #빼서 계산하는 작업
+  # for tmp_s in nums_arr:
+  #   tmp_result = 0
+  #   score = 1
+  #   for i in range(len(tmp_s)-1):
+  #     if tmp_s[i] == 'O':
+  #       tmp_result += score
+  #       if tmp_s[i+1] == 'O':
+  #         score += 1
+  #         continue
+  #       else:
+  #         score = 1
+  #         continue
+  #   if tmp_s[-1] == 'O':
+  #     tmp_result += score
+  #   result_arr.append(tmp_result)
+  # for result in result_arr:
+  #   print(result)
+
 def array_8958():
   n = int(input())
   nums_arr = []
@@ -86,24 +114,19 @@ def array_8958():
   for i in range(n):
     s = list(input())
     nums_arr.append(s)
-  #빼서 계산하는 작업
+
   for tmp_s in nums_arr:
-    tmp_result = 0
-    score = 1
-    for i in range(len(tmp_s)-1):
-      if tmp_s[i] == 'O':
-        tmp_result += score
-        if tmp_s[i+1] == 'O':
-          score += 1
-          continue
-        else:
-          score = 1
-          continue
-    if tmp_s[-1] == 'O':
-      tmp_result += score
-    result_arr.append(tmp_result)
-  for result in result_arr:
+    cnt = 1
+    result = 0
+    for s in tmp_s:
+      if s == 'X':
+        cnt = 1
+        continue
+      
+      result += cnt
+      cnt += 1
     print(result)
+    
 
 
 #4344번 : 평균은 넘겠지

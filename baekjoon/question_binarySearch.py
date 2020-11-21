@@ -48,6 +48,32 @@ def binary_search_1654():
   lan_wires = []
   for _ in range(k):
     lan_wires.append(int(input()))
-  # print(lan_wires)
+
+  # k, n = 4, 11
+  # lan_wires = [802, 743, 457, 539]
+
+  longest = max(lan_wires)
+
+  left = 1
+  right = longest
+  result = 0
+
+  while left <= right :
+    center = (left + right) // 2
+    # print('center=====', center)
+    hap = 0
+
+    for cm in lan_wires:
+      hap += cm // center #쪼갠 랜선의 갯수의 합
+    
+    if hap < n:
+      right = center -1 #길이를 작게만들어서 갯수가 늘어나게
+    elif hap >= n :
+      if center > result :
+        result = center 
+      left = center +1 #길이를 키워서 갯수가 줄어들게
+
+  print(result)
+  
 
   

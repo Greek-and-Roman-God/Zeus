@@ -8,16 +8,29 @@ from chap5_class import *
 
 import doit.game.sound.echo
 
-doit.game.sound.echo.echo_test()
+
+#chap5 연습문제
+# use_filter()
+# hex_to_int()
+# mul_3()
+# sum_max_min()
+# cut_decimal()
+# use_os_module()
+# use_glob()
+# use_time()
+use_random()
 
 
 #chap5
 #이론 실습
-a = FourCal(10, 2)
-a.add()
-a.sub()
-a.prod()
-a.div()
+# a = FourCal(10, 2)
+# a.add()
+# a.sub()
+# a.prod()
+# a.div()
+
+# doit.game.sound.echo.echo_test()
+
 
 
 #chap4 연습문제

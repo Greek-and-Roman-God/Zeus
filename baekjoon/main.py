@@ -18,13 +18,13 @@ from question_binarySearch import binary_search_1920, binary_search_1654
 
 #이분탐색
 # binary_search_1920()
-# binary_search_1654()
+binary_search_1654()
 
 
 #함수
 # solve([1,2,3,4,5])
 # def_4673()
-def_1065()
+# def_1065()
 
 
 #1차원 배열

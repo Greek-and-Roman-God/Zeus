@@ -40,9 +40,119 @@ def binary_search_1920():
       if start > end:
         print(0)
         break
-      
+
+
+# 10816번 : 숫자카드 1트
+def binary_search_10816():
+  _ = int(input())
+  N = list(map(int, input().split()))
+    
+  _ = int(input())
+  M = list(map(int, input().split()))
+
+  # N = [6, 3, 2, 10, 10, 10, -10, -10, 7, 3]
+  # M = [10, 9, -5, 2, 3, 4, 5, -10]
+
+            #   0   1   2  3  4  5  6  7   8   9
+  N.sort() # [-10, -10, 2, 3, 3, 6, 7, 10, 10, 10]
+  # print(N)
+
+  setN = set(N)
+
+  result_arr = []
+
+  def find_start(s,e,m):
+    start = 0
+    while 1:
+      c = (e+s) // 2
+
+      if m == N[c] :
+        if N[c-1] == N[c]:
+          e = c - 1
+        elif N[c-1] != N[c]:
+          start = c
+          break 
+      elif m < N[c]:
+        e = c - 1
+      elif m > N[c]:
+        s = c + 1
+
+      if s > e:
+        start = e
+        break
+    return start
+
+  def find_end(s,e,m):
+    end = 0
+    while 1:
+      c = (e+s) // 2
+
+      if m == N[c] :
+        if N[c+1] == N[c]:
+          s = c + 1
+        elif N[c+1] != N[c]:
+          end = c
+          break 
+      elif m < N[c]:
+        e = c - 1
+      elif m > N[c]:
+        s = c + 1
+
+      if s >= e:
+        end = e
+        break
+    return end
+
+  for m in M:
+    s = 0
+    e = len(N)-1 
+    # print(m)
+
+    if m not in setN:
+      result_arr.append(0)
+      continue
+
+    st = find_start(s,e,m)
+    ed = find_end(s,e,m)
+
+    result_arr.append(ed-st+1)
+  print(' '.join(str(r) for r in result_arr))   
+
+
+
+# 10816번 : 숫자카드 2트
+def binary_search_10816_2():
+  _ = int(input())
+  N = list(map(int, input().split()))
+    
+  _ = int(input())
+  M = list(map(int, input().split()))
+
+  # N = [6, 2, 2, 2, 3, 2, 10, 10, 10, 10, 10, -10, -10, 7, 3]
+  # M = [10, 9, -5, 2, 3, 4, 5, -10]
+
+            #   0   1   2  3  4  5  6  7   8   9
+  N.sort() # [-10, -10, 2, 3, 3, 6, 7, 10, 10, 10]
+  # print(N)
+
+  dictN = {}
+
+  for n in N:
+    if n in dictN:
+      dictN[n] += 1
+    else:
+      dictN[n] = 1
   
-  # 1654번 : 랜선자르기
+  # print(dictN)
+  
+  for m in M:
+    if m not in dictN:
+      print(0, end=' ')
+    else:
+      print(dictN.get(m), end=' ')
+
+  
+# 1654번 : 랜선자르기
 def binary_search_1654():
   k, n = map(int, input().split())
   lan_wires = []

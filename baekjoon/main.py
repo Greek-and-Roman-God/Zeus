@@ -10,7 +10,7 @@ from question_array import array_10818, array_2562, array_2577, array_3052, arra
 from question_def import solve, def_4673, def_1065
 
 #이분탐색
-from question_binarySearch import binary_search_1920, binary_search_1654
+from question_binarySearch import binary_search_1920, binary_search_1654, binary_search_10816, binary_search_10816_2
 
 
 
@@ -18,7 +18,9 @@ from question_binarySearch import binary_search_1920, binary_search_1654
 
 #이분탐색
 # binary_search_1920()
-binary_search_1654()
+# binary_search_1654()
+# binary_search_10816()
+binary_search_10816_2()
 
 
 #함수

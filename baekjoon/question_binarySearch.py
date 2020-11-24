@@ -186,4 +186,85 @@ def binary_search_1654():
   print(result)
   
 
+# 2805 번 : 나무 자르기
+def binary_search_2805():
+  n, m = map(int, input().split())
+  trees = list(map(int, input().split()))
+
+  # n = 4
+  # m = 7
+  # trees = [20, 15, 10, 17]
+
+  s = 0
+  e = max(trees)
+  answer = 0
+
+  while s <= e :
+    c = (s+e) // 2
+    # print('s,e,c====', s,e,c)
+
+    hap = 0
+    for t in trees:
+      if t >= c:
+        tmp = t - c
+        hap += tmp
+        # print('tmp, hap', tmp, hap)
+    
+    if hap < m : #길이가 모자람
+      e = c - 1
+    elif hap >= m : #길이가 넘침
+      s = c + 1
+      answer = c 
+  print(answer)
+
+
+
+# 2110 번 : 공유기 설치
+def binary_search_2110():
+  # n, c = map(int, input().split())
+  # house = []
+  # for _ in range(n):
+  #   house.append(int(input())) #집의 좌표를 입력받음
+
+  n = 5
+  c = 3
+  house = [1,2,8,4,9]
+
+  house.sort() #1,2,4,8,9
+
+  e = house[-1] - house[0] #첫집에서 끝집까지의 거리 : 간격중 최대 간격
+  s = 1 #간격중 최소간격 (최소간격이 될수있는건 1임. 중복 좌표가 없다고 했으니 0 불가) 
+
+
+  while s <= e :
+    cnt = 0
+    dist = (e+s) // 2 #공유기를 설치하기위해 각재는 거리
+    print('dist-------------------------------------', dist)
   
+    prev_house = house[0]
+    cnt += 1 #맨 첫집에 공유기 하나 설치
+    print('cnt ---', cnt)
+
+    for i in range(1, len(house)):
+      print('---------------------------i ', i)
+      tmp_house = house[i]
+      d = tmp_house - prev_house #두 집 사이의 거리
+      print('tmp_house...', tmp_house, '// d...' ,d)
+      
+      if d >= dist :
+        cnt += 1
+        prev_house = tmp_house
+        print('cnt ---', cnt)
+      else :
+        continue
+
+    if cnt < c : #설치한 공유기가 모자르다면(간격이 너무 넓어서)
+      e = dist - 1 #거리를 줄이자
+    else : #공유기가 딱맞거나 or 너무많이 설치됐다면 (간격이 촘촘해서) 
+      s = dist + 1 #거리를 늘리자
+      answer = dist
+  print(answer)
+
+
+
+    

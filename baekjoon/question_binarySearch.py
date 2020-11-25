@@ -154,13 +154,13 @@ def binary_search_10816_2():
   
 # 1654번 : 랜선자르기
 def binary_search_1654():
-  k, n = map(int, input().split())
-  lan_wires = []
-  for _ in range(k):
-    lan_wires.append(int(input()))
+  # k, n = map(int, input().split())
+  # lan_wires = []
+  # for _ in range(k):
+  #   lan_wires.append(int(input()))
 
-  # k, n = 4, 11
-  # lan_wires = [802, 743, 457, 539]
+  k, n = 4, 11
+  lan_wires = [802, 743, 457, 539]
 
   longest = max(lan_wires)
 
@@ -179,8 +179,7 @@ def binary_search_1654():
     if hap < n:
       right = center -1 #길이를 작게만들어서 갯수가 늘어나게
     elif hap >= n :
-      if center > result :
-        result = center 
+      result = center
       left = center +1 #길이를 키워서 갯수가 줄어들게
 
   print(result)

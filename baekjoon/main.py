@@ -18,11 +18,11 @@ from question_binarySearch import binary_search_1920, binary_search_1654, binary
 
 #이분탐색
 # binary_search_1920()
-# binary_search_1654()
+binary_search_1654()
 # binary_search_10816()
 # binary_search_10816_2()
 # binary_search_2805()
-binary_search_2110()
+# binary_search_2110()
 
 
 

@@ -41,9 +41,13 @@ def def_1065():
   def check_han_su(n) :
     str_n = str(n)
     num_arr = []
+
+    #여기는 필요없는 부분이었음!!!!!!!!
+    #string에 바로 index 줄 수 있어요
     for i in range(len(str_n)):
       tmp = str_n[i]
       num_arr.append(int(tmp))
+    
 
     cha = num_arr[1] - num_arr[0] #등차 
     for i in range(len(num_arr)-1):

@@ -12,18 +12,32 @@ from question_def import solve, def_4673, def_1065
 #이분탐색
 from question_binarySearch import binary_search_1920, binary_search_1654, binary_search_10816, binary_search_10816_2, binary_search_2805, binary_search_2110
 
+#문자열
+from question_string import string_11654, string_11720, string_10809, string_2675, string_1157, string_1152, string_2908, string_5622, string_2941,string_1316
 
 
+
+
+#문자열
+# string_11654()
+# string_11720()
+# string_10809()
+# string_2675()
+# string_1157()
+# string_1152()
+# string_2908()
+# string_5622()
+# string_2941()
+string_1316()
 
 
 #이분탐색
 # binary_search_1920()
-binary_search_1654()
+# binary_search_1654()
 # binary_search_10816()
 # binary_search_10816_2()
 # binary_search_2805()
 # binary_search_2110()
-
 
 
 #함수

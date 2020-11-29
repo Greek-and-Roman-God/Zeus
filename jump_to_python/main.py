@@ -4,10 +4,15 @@ from chap3_control_statement import while_3multiple, while_stars, for_print_nums
 
 from chap4_input_output import is_odd, avg_all, sum_of_two, make_file, make_file2, change_file
 
-from chap5_class import *
+# from chap5_class import *
+
+from chap6 import hap_multiples
 
 import doit.game.sound.echo
 
+
+#chap6실습
+hap_multiples()
 
 #chap5 연습문제
 # use_filter()
@@ -18,7 +23,7 @@ import doit.game.sound.echo
 # use_os_module()
 # use_glob()
 # use_time()
-use_random()
+# use_random()
 
 
 #chap5

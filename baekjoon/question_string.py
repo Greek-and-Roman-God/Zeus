@@ -176,7 +176,7 @@ def string_2941():
 def string_1316():
   n = int(input()) #단어 갯수
   list_s = []
-  ascii_a = ord('a')
+  ascii_a = ord('a') #97
   cnt = 0
 
   for _ in range(n):

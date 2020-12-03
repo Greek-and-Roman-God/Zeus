@@ -15,7 +15,12 @@ from question_binarySearch import binary_search_1920, binary_search_1654, binary
 #문자열
 from question_string import string_11654, string_11720, string_10809, string_2675, string_1157, string_1152, string_2908, string_5622, string_2941,string_1316
 
+#수학1
+from question_math1 import math_1712, math_2839, math_2292
 
+# math_1712()
+# math_2839()
+math_2292()
 
 
 #문자열
@@ -28,7 +33,7 @@ from question_string import string_11654, string_11720, string_10809, string_267
 # string_2908()
 # string_5622()
 # string_2941()
-string_1316()
+# string_1316()
 
 
 #이분탐색

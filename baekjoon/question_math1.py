@@ -60,3 +60,37 @@ def math_2292():
     d += 1
   print('while 밖으로 나옴... cnt :',cnt)
   print(answer)
+
+
+# 1193 번 : 분수찾기
+def math_1193():
+  n = int(input())
+
+  cnt = 0
+  i = 0
+  while cnt < n :
+    i += 1
+    cnt += i
+  # print('i, cnt', i, cnt)
+  
+  if i % 2 == 0 : #짝수 줄이라면 (분모가 증가)
+    bunmo = 1 + (cnt - n)
+    bunja = (i+1) - bunmo
+  else: #홀수줄이라면 (분자가 증가)
+    bunja = 1 + (cnt - n)
+    bunmo = (i+1) - bunja
+
+  print('{0}/{1}'.format(bunja, bunmo))
+
+
+def math_2869():
+  a, b, v = map(int, input().split())
+  day = 1
+
+  day2 = (v-a) // (a-b)
+  chk = (v-a) % (a-b)
+  if chk == 0 :
+    day += day2
+  else:
+    day += day2 + 1
+  print(day)

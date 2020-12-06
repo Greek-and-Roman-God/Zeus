@@ -83,6 +83,7 @@ def math_1193():
   print('{0}/{1}'.format(bunja, bunmo))
 
 
+# 2869 번 : 달팽이는 올라가고 싶다
 def math_2869():
   a, b, v = map(int, input().split())
   day = 1
@@ -94,3 +95,55 @@ def math_2869():
   else:
     day += day2 + 1
   print(day)
+
+
+# 10250 번 : ACM 호텔
+def math_10250():
+  # 이 문제를 푸는데 중요한 사실!
+  # floor = n % h 인데, 만약 나누어 떨어져버리면
+  # floor = 0이 돼버린다. 그런 경우에는 h가 층이 될 수 있도록 처리해준다.
+
+  t = int(input())
+
+  for _ in range(t):
+    answer = ''
+    h, w, n = map(int, input().split())
+    floor = 0 #층
+    ho = 0 #호수
+
+    floor = n % h 
+    ho = n // h
+    if floor != 0: #나누어 떨어지지 않으면
+      ho += 1
+    else : #나누어 떨어지면
+      floor = h
+    print('{0}{1:02d}'.format(floor, ho))
+      
+
+# 1011 번 : Fly me to the Alpha Centauri
+import math
+def math_1011():
+  t = int(input())
+
+  for _ in range(t):
+    x, y = map(int, input().split())
+    d = y-x #두 점 사이의 거리
+
+    answer = 0
+
+    root = math.floor(math.sqrt(d)) #거리의 제곱근을 소수점 버리고 정수로
+
+    if math.sqrt(d) == root: #d가 제곱수라면
+      answer = 2*root - 1
+    else: #제곱수가 아니라면
+      double1 = root ** 2
+      double2 = (root+1) ** 2
+      center = math.ceil((double1 + double2) / 2)
+
+      if d >= center: #d가 center보다 같거나 크다면
+        answer = 2*root + 1
+      else : #d가 center보다 작다면
+        answer = root * 2
+    print(answer)
+
+    

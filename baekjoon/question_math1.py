@@ -11,7 +11,7 @@ def math_1712():
   # a = c*cnt - b*cnt
   # a = (c-b)cnt 에서 양변을 c-b로 나누면 cnt를 구할 수 있음
   # 근데 이 경우는 이득이 난 게 아니라, 딱 0원인 수준이기 때문에
-  # +1을 해서 이익이 나게 만들어야함a, b, c = map(int, input().split())
+  # +1을 해서 이익이 나게 만들어야함
 
   cnt = 0 #노트북의 갯수
   if b >= c :
@@ -147,3 +147,27 @@ def math_1011():
     print(answer)
 
     
+# 2775 번 : 부녀회장이 될테야
+def math_2775():
+  t = int(input()) #테케의 수
+
+  def find_people(k, n):
+    if k == 0 : #0층이면
+      return n
+
+    apt = [ [0 for i in range(15)] for _ in range(15) ]
+    apt[0] = [i for i in range(15)] #0층은 1부터 15까지 차례로 들어감
+
+    for i in range(1, k+1):
+      for j in range(1, n+1):
+        apt[i][j] = apt[i-1][j] + apt[i][j-1]
+    print(apt)
+    return apt[k][n]
+
+  for _ in range(t):
+    k = int(input()) #층
+    n = int(input()) #호
+    print(find_people(k,n))
+    
+
+

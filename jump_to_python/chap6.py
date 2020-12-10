@@ -15,3 +15,4 @@ def getTotalPage(m,n):
     pages = m // n + 1
   
   return pages
+

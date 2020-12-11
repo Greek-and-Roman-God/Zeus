@@ -28,3 +28,25 @@ def recursive_10870():
 
   print(pibo(n))
 
+
+# 11729 번 : 하노이 탑 이동 순서
+def recursive_11729():
+  global cnt, ans
+  num = int(input()) #원판의 갯수
+  cnt = 0
+  ans = []
+
+  def hanoi(num, from_n, by_n, to_n):
+    global cnt, ans
+    cnt += 1
+    if num == 1:
+      ans.append(str(from_n) + ' ' + str(to_n))
+    else:
+      hanoi(num-1, from_n, to_n, by_n)
+      ans.append(str(from_n) + ' ' + str(to_n))
+      hanoi(num-1, by_n, from_n, to_n)
+    
+  hanoi(num, 1, 2, 3)
+  print(cnt)
+  for a in ans:
+    print(a)

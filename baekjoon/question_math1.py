@@ -64,13 +64,14 @@ def math_2292():
 
 # 1193 번 : 분수찾기
 def math_1193():
-  n = int(input())
+  n = int(input()) #9
 
-  cnt = 0
-  i = 0
+  cnt = 0 
+  i = 0 #줄
+
   while cnt < n :
-    i += 1
-    cnt += i
+    i += 1 #4
+    cnt += i #10
   # print('i, cnt', i, cnt)
   
   if i % 2 == 0 : #짝수 줄이라면 (분모가 증가)

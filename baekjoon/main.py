@@ -22,7 +22,7 @@ from question_math1 import math_1712, math_2839, math_2292, math_1193, math_2869
 from question_recursive import recursive_10872, recursive_10870, recursive_11729
 
 #수학2
-from question_math2 import math_1978, math_2581
+from question_math2 import math_1978, math_2581, math_1929, math_1085, math_3009
 
 
 
@@ -33,7 +33,10 @@ from question_math2 import math_1978, math_2581
 
 #수학2
 # math_1978()
-math_2581()
+# math_2581()
+# math_1929()
+# math_1085()
+math_3009()
 
 
 #수학1

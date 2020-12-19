@@ -50,3 +50,30 @@ def recursive_11729():
   print(cnt)
   for a in ans:
     print(a)
+
+
+# 2447 번 : 별찍기-10
+def recursive_2447():
+  n = int(input()) #한 변의 크기
+  
+  def make_star(x,y,n):
+    print('start making stars')
+    if x//n % 3 == 1 and y//n % 3 == 1:
+      print(x,y,n)
+      print(' ', end='')
+    else:
+      if n // 3 == 0:
+        print('n : ',n)
+        print('*', end='')
+      else:
+        print('else..')
+        make_star(x,y,n//3)
+
+  for x in range(n):
+    print('-------------------------x : ',x)
+    for y in range(n):
+      print('--------------------y : ',y)
+      make_star(x,y,n)
+    print('')
+  
+  

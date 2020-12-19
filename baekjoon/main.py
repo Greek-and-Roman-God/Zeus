@@ -19,7 +19,7 @@ from question_string import string_11654, string_11720, string_10809, string_267
 from question_math1 import math_1712, math_2839, math_2292, math_1193, math_2869, math_10250, math_1011, math_2775
 
 #재귀
-from question_recursive import recursive_10872, recursive_10870, recursive_11729
+from question_recursive import recursive_10872, recursive_10870, recursive_11729, recursive_2447
 
 #수학2
 from question_math2 import math_1978, math_2581, math_1929, math_1085, math_3009
@@ -30,13 +30,14 @@ from question_math2 import math_1978, math_2581, math_1929, math_1085, math_3009
 # recursive_10872()
 # recursive_10870()
 # recursive_11729()
+recursive_2447()
 
 #수학2
 # math_1978()
 # math_2581()
 # math_1929()
 # math_1085()
-math_3009()
+# math_3009()
 
 
 #수학1

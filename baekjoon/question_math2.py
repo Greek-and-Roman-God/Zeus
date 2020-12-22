@@ -103,7 +103,7 @@ def math_3009():
   arr_y = []
   
   for _ in range(3):
-    x, y = map(int, input().split())
+    x, y = map(int, input().split()) 
     arr_x.append(x)
     arr_y.append(y)
   
@@ -115,3 +115,54 @@ def math_3009():
     if arr_y.count(arr_y[i]) == 1:
       ans_y = arr_y[i]
   print(ans_x, ans_y)
+
+
+# 4948 번 : 베르트랑 공준
+def math_4948():
+  #체를 미리 선언해놓으면 시간초과가 안남
+  #왜냐면 입력받는 숫자의 최댓값이 123456까지라고 돼있어서
+  ran = 123456
+  arr_nums = [0]*(2*ran+1) #기본 0으로 선언
+
+  for i in range(ran + 1):
+    if i == 0 or i == 1:
+      arr_nums[i] = 1 #소수가 아니니까 1로 변경
+    else:
+      for j in range(2*i, 2*ran+1, i):
+        arr_nums[j] = 1 #배수들은 소수가 아니니까 1로 변경
+
+  #while문을 돌면서 확인
+  while True:
+    n = int(input())
+    if n == 0: break
+
+    answer = arr_nums[n+1:2*n+1].count(0)
+
+    print(answer)
+
+
+# 4153 번 : 직각삼각형
+def math_4153():
+  while True:
+    num_arr = list(map(int, input().split()))
+
+    if num_arr[0] == 0: break;
+
+    answer = 'wrong'
+    num_arr.sort()
+
+    if num_arr[-1] ** 2 == num_arr[0]**2 + num_arr[1]**2:
+      answer = 'right'
+    print(answer)
+
+
+# 3053 번 : 택시 기하학
+import math
+def math_3053():
+  n = int(input())
+
+  u_circle = n*n*math.pi
+  t_circle = n*n*2 # 2n * 2n / 2 = 4n^2 / 2 = 2n^2 
+
+  print(u_circle)
+  print(t_circle)

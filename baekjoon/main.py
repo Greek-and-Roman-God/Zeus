@@ -22,15 +22,16 @@ from question_math1 import math_1712, math_2839, math_2292, math_1193, math_2869
 from question_recursive import recursive_10872, recursive_10870, recursive_11729, recursive_2447
 
 #수학2
-from question_math2 import math_1978, math_2581, math_1929, math_1085, math_3009, math_4948, math_4153, math_3053
+from question_math2 import math_1978, math_2581, math_1929, math_1085, math_3009, math_4948, math_4153, math_3053, math_1002
 
 #브루트 포스
-from question_brute_force import brute_2798
+from question_brute_force import brute_2798, brute_2231
 
 
 
 #브루트 포스
-brute_2798()
+# brute_2798()
+# brute_2231()
 
 
 #재귀
@@ -48,6 +49,7 @@ brute_2798()
 # math_4948()
 # math_4153()
 # math_3053()
+math_1002()
 
 
 #수학1

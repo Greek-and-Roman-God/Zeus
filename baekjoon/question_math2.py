@@ -166,3 +166,25 @@ def math_3053():
 
   print(u_circle)
   print(t_circle)
+
+
+# 1002 번 : 터렛
+def math_1002():
+  t = int(input())
+
+  for i in range(t):
+    x1, y1, r1, x2, y2, r2 = map(int, input().split())
+
+    if x1==x2 and y1==y2: #두 점이 같은 위치
+      if r1==r2: #반지름이 같으면 -> 두 원이 완전 일치
+        print(-1)
+      else : #반지름이 다름 -> 만나지않음
+        print(0)
+    else: #두 점의 위치가 다를때
+      dist = ((x1-x2)**2 + (y1-y2)**2) ** 0.5
+      if dist == r1+r2 or dist == abs(r1-r2): #한 점 만남 (외접, 내접)
+        print(1)
+      elif abs(r1-r2) < dist < r1+r2: #두 점 만남
+        print(2)
+      elif dist > r1+r2 or dist != abs(r1-r2): #안만남 (밖에서, 안에서)
+        print(0)

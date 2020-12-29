@@ -188,3 +188,31 @@ def math_1002():
         print(2)
       elif dist > r1+r2 or dist != abs(r1-r2): #안만남 (밖에서, 안에서)
         print(0)
+
+
+
+# 9020 번 : 골드바흐의 추측
+def math_9020():
+  t = int(input())
+  nums = []
+  for i in range(t):
+    nums.append(int(input()))
+  
+  che = [0] * (max(nums)+1) #입력받은 수들 중 가장 큰 수까지 체 생성
+  che[0], che[1] = 1, 1 #소수가 아니므로 1
+  for i in range(2, len(che)//2 + 1): 
+    for j in range(2*i, len(che), i):
+      che[j] = 1 #소수가 아닌 애들 1로 변경
+
+  for n in nums:
+    answer = []
+    for a, sosu_a in enumerate(che):
+      if sosu_a == 0: #a가 소수일때
+        b = n - a 
+        # print('--------------', a, b)
+        if che[b] == 0 and a <= b: #b도 소수이면
+          answer.append([a,b])
+    print(answer[-1][0], answer[-1][1])
+    
+    
+    

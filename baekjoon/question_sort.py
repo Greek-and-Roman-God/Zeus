@@ -57,12 +57,31 @@ def sort_2108():
   # if len(s_freq)!=1 and s_freq[0][1] == s_freq[1][1]: #갯수가 같은게 있다면
   #   freq_num = s_freq[1][0]
   freqs = Counter(nums).most_common()
+  print(freqs)
   freq = freqs[0][0]
   if len(freqs) != 1 and freqs[0][1] == freqs[1][1]:
     freq = freqs[1][0]
   print(avg, center, freq, cha, sep='\n')
 
 
+
+# 1427 번 : 소트인사이드
+import sys
+def sort_1427():
+  n = sys.stdin.readline().rstrip()
+  sorted_n = sorted(list(n), reverse=True)
+  print(''.join(sorted_n))
+
+
+# 11650 번 : 좌표 정렬하기
+def sort_11650():
+  n = int(sys.stdin.readline()) #좌표의 갯수
+  dots = []
+  for _ in range(n):
+    dots.append(list(map(int, sys.stdin.readline().split())))
+  s_dots = sorted(dots, key = lambda x : (x[0], x[1]))
+  for x,y in s_dots:
+    print(x,y)
 
 
 # 1181 번 : 단어 정렬
@@ -75,3 +94,5 @@ def sort_1181():
   s_words = sorted(set(words), key=lambda x:(len(x),x))
   for w in s_words:
     print(w)
+
+

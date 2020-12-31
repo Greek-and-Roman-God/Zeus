@@ -84,6 +84,18 @@ def sort_11650():
     print(x,y)
 
 
+# 11651 번 : 좌표 정렬하기2
+import sys
+def sort_11651():
+  n = int(sys.stdin.readline())
+  dots = []
+  for _ in range(n):
+    dots.append(list(map(int, sys.stdin.readline().split())))
+  s_dots = sorted(dots, key = lambda x : (x[1], x[0]))
+  for x,y in s_dots:
+    print(x, y)
+
+
 # 1181 번 : 단어 정렬
 def sort_1181():
   n = int(input())
@@ -96,3 +108,15 @@ def sort_1181():
     print(w)
 
 
+# 10814 번 : 나이순 정렬
+# 나이를 str 그대로 비교하면 틀리는것같다...
+import sys
+def sort_10814():
+  n = int(sys.stdin.readline())
+  people = []
+  for _ in range(n):
+    age, name = sys.stdin.readline().rstrip().split()
+    people.append([int(age), name])
+  people.sort(key = lambda x : x[0])
+  for x, y in people:
+    print(x, y)

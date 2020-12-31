@@ -31,7 +31,7 @@ from question_brute_force import brute_2798, brute_2231, brute_1436, brute_1018,
 from question_greedy2 import greedy2_11047
 
 #정렬
-from question_sort import sort_2750, sort_2751, sort_10989, sort_1181, sort_2108, sort_1427, sort_11650
+from question_sort import sort_2750, sort_2751, sort_10989, sort_1181, sort_2108, sort_1427, sort_11650, sort_11651, sort_10814
 
 #정렬
 # sort_2750()
@@ -40,7 +40,9 @@ from question_sort import sort_2750, sort_2751, sort_10989, sort_1181, sort_2108
 # sort_1181()
 # sort_2108()
 # sort_1427()
-sort_11650()
+# sort_11650()
+# sort_11651()
+sort_10814()
 
 
 #그리디(다시풀기)

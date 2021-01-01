@@ -24,16 +24,19 @@ def sort_2751():
 
 
 # 10989 번 : 수 정렬하기3
+import sys
 def sort_10989():
   n = int(input())
-  nums = [0] * n
+  nums = [0] * 10001
 
   for i in range(n):
-    nums[i] = int(sys.stdin.readline().rstrip())
+    tmp = int(sys.stdin.readline())
+    nums[tmp] += 1
 
-  nums.sort()
-  for num in nums:
-    print(num)
+  for i, cnt in enumerate(nums):
+    if cnt != 0:
+      for _ in range(cnt):
+        print(i)
 
 
 # 2108 번 : 통계학

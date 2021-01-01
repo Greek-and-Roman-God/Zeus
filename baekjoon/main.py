@@ -36,13 +36,13 @@ from question_sort import sort_2750, sort_2751, sort_10989, sort_1181, sort_2108
 #정렬
 # sort_2750()
 # sort_2751()
-# sort_10989()
+sort_10989()
 # sort_1181()
 # sort_2108()
 # sort_1427()
 # sort_11650()
 # sort_11651()
-sort_10814()
+# sort_10814()
 
 
 #그리디(다시풀기)

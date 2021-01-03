@@ -172,3 +172,6 @@ def math_2775():
     
 
 
+# 10757 번 : 큰 수 A+b
+def math_10757():
+  print(sum(list(map(int, input().split()))))

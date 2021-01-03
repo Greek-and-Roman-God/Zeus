@@ -16,19 +16,19 @@ from question_binarySearch import binary_search_1920, binary_search_1654, binary
 from question_string import string_11654, string_11720, string_10809, string_2675, string_1157, string_1152, string_2908, string_5622, string_2941,string_1316
 
 #수학1
-from question_math1 import math_1712, math_2839, math_2292, math_1193, math_2869, math_10250, math_1011, math_2775
+from question_math1 import math_1712, math_2839, math_2292, math_1193, math_2869, math_10250, math_1011, math_2775, math_10757
 
 #재귀
 from question_recursive import recursive_10872, recursive_10870, recursive_11729, recursive_2447
 
 #수학2
-from question_math2 import math_1978, math_2581, math_1929, math_1085, math_3009, math_4948, math_4153, math_3053, math_1002,math_9020
+from question_math2 import math_1978, math_2581, math_1929, math_1085, math_3009, math_4948, math_4153, math_3053, math_1002,math_9020, math_11653
 
 #브루트 포스
 from question_brute_force import brute_2798, brute_2231, brute_1436, brute_1018, brute_7568
 
 #그리디(다시풀기)
-from question_greedy2 import greedy2_11047
+from question_greedy2 import greedy2_11047, greedy2_1931
 
 #정렬
 from question_sort import sort_2750, sort_2751, sort_10989, sort_1181, sort_2108, sort_1427, sort_11650, sort_11651, sort_10814
@@ -36,7 +36,7 @@ from question_sort import sort_2750, sort_2751, sort_10989, sort_1181, sort_2108
 #정렬
 # sort_2750()
 # sort_2751()
-sort_10989()
+# sort_10989()
 # sort_1181()
 # sort_2108()
 # sort_1427()
@@ -47,6 +47,8 @@ sort_10989()
 
 #그리디(다시풀기)
 # greedy2_11047()
+# greedy2_1931()
+
 
 #브루트 포스
 # brute_2798()
@@ -67,6 +69,7 @@ sort_10989()
 # math_3053()
 # math_1002()
 # math_9020()
+math_11653()
 
 
 #재귀
@@ -85,6 +88,7 @@ sort_10989()
 # math_10250()
 # math_1011()
 # math_2775()
+# math_10757()
 
 
 #문자열

@@ -215,4 +215,14 @@ def math_9020():
     print(answer[-1][0], answer[-1][1])
     
     
-    
+
+# 11653 번 : 소인수분해
+def math_11653():
+  n = int(input())
+
+  while n > 1:
+    for i in range(2, n+1):
+      if n % i == 0 : #나누어떨어지면
+        print(i)
+        n //= i
+        break

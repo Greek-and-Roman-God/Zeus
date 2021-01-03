@@ -17,3 +17,31 @@ def greedy2_11047():
     cnt += k//c
     k %= c
   print(cnt)
+
+
+# 1931 번 : 회의실배정
+def greedy2_1931():
+  n = int(input())
+  meetings = []
+
+  for _ in range(n):
+    s, e = map(int, input().split())
+    meetings.append([s,e])
+ 
+  answer = 1
+
+  meetings = sorted(meetings, key = lambda x : (x[1], x[0]) )
+
+  pre = 0 #맨 처음 회의 
+  nex = 1 #두번째 회의 
+
+  while nex < n:
+    pre_end = meetings[pre][1]
+    next_start = meetings[nex][0]
+
+    if pre_end <= next_start: #이전 회의의 종료시간 <= 지금 회의의 시작시간 이라면
+      answer += 1
+      pre = nex
+    nex += 1
+
+  print(answer)

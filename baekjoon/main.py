@@ -33,6 +33,16 @@ from question_greedy2 import greedy2_11047, greedy2_1931
 #정렬
 from question_sort import sort_2750, sort_2751, sort_10989, sort_1181, sort_2108, sort_1427, sort_11650, sort_11651, sort_10814
 
+#백트래킹
+from question_backtracking import backtracking_15649
+
+
+
+
+#백트래킹
+backtracking_15649()
+
+
 #정렬
 # sort_2750()
 # sort_2751()
@@ -69,7 +79,7 @@ from question_sort import sort_2750, sort_2751, sort_10989, sort_1181, sort_2108
 # math_3053()
 # math_1002()
 # math_9020()
-math_11653()
+# math_11653()
 
 
 #재귀

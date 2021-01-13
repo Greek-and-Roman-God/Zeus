@@ -34,15 +34,18 @@ from question_greedy2 import greedy2_11047, greedy2_1931
 from question_sort import sort_2750, sort_2751, sort_10989, sort_1181, sort_2108, sort_1427, sort_11650, sort_11651, sort_10814
 
 #백트래킹
-from question_backtracking import backtracking_15649, backtracking_15650, backtracking_14889
-
+from question_backtracking import backtracking_15649, backtracking_15650, backtracking_14889, backtracking_9663, backtracking_15651, backtracking_15652_1, backtracking_15652
 
 
 
 #백트래킹
 # backtracking_15649()
 # backtracking_15650()
-backtracking_14889()
+# backtracking_14889()
+# backtracking_9663()
+# backtracking_15651()
+# backtracking_15652_1()
+# backtracking_15652()
 
 
 #정렬

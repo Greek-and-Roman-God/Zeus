@@ -41,3 +41,24 @@ def set_6603():
     for comb in itertools.combinations(num_list, 6):
       print(' '.join(str(c) for c in comb))
     print()
+
+
+
+# 9095 번 : 1,2,3 더하기
+import itertools
+def set_9095():
+  t = int(input()) #케이스의 갯수
+  for _ in range(t):
+    n = int(input())
+    answer = 0
+
+    num_list = [i for i in range(1, 4)] #1~3의 합으로 이루어져야 하므로
+    num_prod = []
+    
+    for i in range(1, n+1):
+      num_prod += list(map(sum, itertools.product(num_list, repeat=i)))
+    
+    for p in num_prod:
+      if p == n:
+        answer += 1
+    print(answer)

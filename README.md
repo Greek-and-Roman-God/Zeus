@@ -1,9 +1,11 @@
 # Zeus
 
-⚡Ζεύς⚡ 연습문제, 백준 문제풀이  <br/>
-our goal : ❗❗KILL THE PYTHON❗❗  <br/>
+⚡Ζεύς⚡ 이것이 코딩 테스트다 연습문제, 백준 문제 풀이 
+our goal : ❗❗KILL THE PYTHON❗❗  
 
-## chap3 greedy[🔥](https://github.com/Greek-and-Roman-God/Zeus/tree/main/ch3_greedy)
+---
+### 🔎이코테
+#### chap3 greedy[🔥](https://github.com/Greek-and-Roman-God/Zeus/tree/main/ch3_greedy)
 
 | [Part2](https://github.com/Greek-and-Roman-God/Zeus/blob/main/ch3_greedy/part2.py)                         | [Part3](https://github.com/Greek-and-Roman-God/Zeus/blob/main/ch3_greedy/part3.py)                | 
 |-------------------------------|----------------------|
@@ -14,7 +16,7 @@ our goal : ❗❗KILL THE PYTHON❗❗  <br/>
 |                               |✔ Q5 볼링공 고르기 
 |                               |✔ Q6 무지의 먹방 라이브 
 
-## chap4 구현[🔥]()
+#### chap4 구현[🔥]()
 
 | [Part2]()                         | [Part3]()                | 
 |-------------------------------|----------------------|
@@ -27,16 +29,17 @@ our goal : ❗❗KILL THE PYTHON❗❗  <br/>
 |                               | Q13 치킨 배달 
 |                               | Q14 외벽 점검 
 
+---
 
-## Baekjoon Online Judge
+### 🔎Baekjoon Online Judge
 - [X] if문 [❓](https://www.acmicpc.net/step/4) [💯](https://github.com/Greek-and-Roman-God/Zeus/blob/main/baekjoon/question_if.py)
 - [X] for문 [❓](https://www.acmicpc.net/step/3) [💯](https://github.com/Greek-and-Roman-God/Zeus/blob/main/baekjoon/question_for.py)
 - [X] while문 [❓](https://www.acmicpc.net/step/2) [💯](https://github.com/Greek-and-Roman-God/Zeus/blob/main/baekjoon/question_while.py)
 - [X] 1차원 배열 [❓](https://www.acmicpc.net/step/6) [💯](https://github.com/Greek-and-Roman-God/Zeus/blob/main/baekjoon/question_array.py)
 - [X] 함수 [❓](https://www.acmicpc.net/step/5) [💯](https://github.com/Greek-and-Roman-God/Zeus/blob/main/baekjoon/question_def.py)
 - [X] 문자열 [❓](https://www.acmicpc.net/step/7) [💯](https://github.com/Greek-and-Roman-God/Zeus/blob/main/baekjoon/question_string.py)
-- [ ] 수학1 [❓]() [💯]()
-- [ ] 수학2 [❓]() [💯]()
+- [X] 수학1 [❓](https://www.acmicpc.net/step/8) [💯](https://github.com/Greek-and-Roman-God/Zeus/blob/main/baekjoon/question_math1.py)
+- [X] 수학2 [❓](https://www.acmicpc.net/step/10) [💯](https://github.com/Greek-and-Roman-God/Zeus/blob/main/baekjoon/question_math2.py)
 - [ ] 재귀 [❓]() [💯]()
 - [ ] 브루트 포스 [❓]() [💯]()
 - [ ] 정렬 [❓]() [💯]()

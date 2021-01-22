@@ -37,7 +37,7 @@ from question_sort import sort_2750, sort_2751, sort_10989, sort_1181, sort_2108
 from question_backtracking import backtracking_15649, backtracking_15650, backtracking_14889, backtracking_9663, backtracking_15651, backtracking_15652_1, backtracking_15652, backtracking_14888, backtracking_2580
 
 #세트2
-from question_set2 import set_1037, set_2609, set_6603
+from question_set2 import set_1037, set_2609, set_6603, set_9095
 
 
 
@@ -46,7 +46,8 @@ from question_set2 import set_1037, set_2609, set_6603
 # set_1037()
 # set_2609()
 # set_1182()
-set_6603()
+# set_6603()
+set_9095()
 
 
 #백트래킹

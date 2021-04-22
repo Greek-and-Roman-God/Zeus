@@ -62,3 +62,18 @@ def set_9095():
       if p == n:
         answer += 1
     print(answer)
+
+
+
+# 1182 번 : 부분수열의 합
+import itertools
+def set_1182():
+  n, s = map(int, input().split())
+  num_list = list(map(int, input().split()))
+
+  ans = 0
+  for i in range(1, n+1):
+    for tmp in itertools.combinations(num_list, i):
+      if sum(tmp) == s:
+        ans+=1
+  print(ans)
